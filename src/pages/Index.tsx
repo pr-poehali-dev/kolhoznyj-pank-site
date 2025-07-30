@@ -85,10 +85,10 @@ const Index = () => {
           <h1 className="text-6xl md:text-8xl font-black text-primary mb-4 transform -rotate-2 uppercase tracking-wider">
             КОЛХОЗНЫЙ
           </h1>
-          <h2 className="text-4xl md:text-6xl font-black text-black mb-6 transform rotate-1 uppercase">
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 transform rotate-1 uppercase">
             ПАНК
           </h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-bold uppercase text-black">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-bold uppercase text-white">
             Российский рок-бар с бунтарской душой
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
