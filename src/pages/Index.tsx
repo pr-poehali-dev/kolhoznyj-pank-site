@@ -72,7 +72,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white text-black">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -85,17 +85,17 @@ const Index = () => {
           <h1 className="text-6xl md:text-8xl font-black text-primary mb-4 transform -rotate-2 uppercase tracking-wider">
             КОЛХОЗНЫЙ
           </h1>
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 transform rotate-1 uppercase">
+          <h2 className="text-4xl md:text-6xl font-black text-black mb-6 transform rotate-1 uppercase">
             ПАНК
           </h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-bold uppercase">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-bold uppercase text-black">
             Российский рок-бар с бунтарской душой
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-black uppercase tracking-wider">
               МЕНЮ
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black font-black uppercase">
+            <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white font-black uppercase">
               БРОНЬ
             </Button>
           </div>
@@ -103,12 +103,12 @@ const Index = () => {
       </section>
 
       {/* Cocktail Menu */}
-      <section className="py-20 px-4 bg-punk-gray">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-primary uppercase transform -rotate-1">
             КОКТЕЙЛЬНАЯ КАРТА
           </h2>
-          <p className="text-center text-xl mb-12 uppercase font-bold">
+          <p className="text-center text-xl mb-12 uppercase font-bold text-black">
             НАПИТКИ ПО МОТИВАМ ЛЕГЕНДАРНЫХ ПЕСЕН
           </p>
           
@@ -125,7 +125,7 @@ const Index = () => {
                   <CardTitle className="text-2xl font-black text-primary uppercase">
                     {cocktail.name}
                   </CardTitle>
-                  <CardDescription className="text-white text-base">
+                  <CardDescription className="text-black text-base">
                     {cocktail.description}
                   </CardDescription>
                 </CardHeader>
@@ -146,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Events */}
-      <section className="py-20 px-4 bg-black">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-12 text-primary uppercase transform rotate-1">
             СОБЫТИЯ
@@ -162,16 +162,16 @@ const Index = () => {
                         <div className="text-2xl font-black text-primary">
                           {event.date.split(' ')[0]}
                         </div>
-                        <div className="text-sm text-white uppercase">
+                        <div className="text-sm text-black uppercase">
                           {event.date.split(' ')[1]}
                         </div>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-black text-white uppercase">
+                        <h3 className="text-2xl font-black text-black uppercase">
                           {event.title}
                         </h3>
                         <div className="flex items-center gap-4 mt-2">
-                          <span className="flex items-center gap-2 text-white">
+                          <span className="flex items-center gap-2 text-black">
                             <Icon name="Clock" size={16} />
                             {event.time}
                           </span>
@@ -193,7 +193,7 @@ const Index = () => {
       </section>
 
       {/* Gallery Preview */}
-      <section className="py-20 px-4 bg-punk-gray">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-12 text-primary uppercase transform -rotate-1">
             ГАЛЕРЕЯ
@@ -212,7 +212,7 @@ const Index = () => {
       </section>
 
       {/* Contact & Booking */}
-      <section className="py-20 px-4 bg-black">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-12 text-primary uppercase transform rotate-1">
             КОНТАКТЫ
@@ -228,19 +228,19 @@ const Index = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Icon name="MapPin" size={20} className="text-primary" />
-                  <span>ул. Панк-Рок, д. 77, Москва</span>
+                  <span className="text-black">ул. Панк-Рок, д. 77, Москва</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Phone" size={20} className="text-primary" />
-                  <span>+7 (999) 123-45-67</span>
+                  <span className="text-black">+7 (999) 123-45-67</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Clock" size={20} className="text-primary" />
-                  <span>Ежедневно 18:00 - 03:00</span>
+                  <span className="text-black">Ежедневно 18:00 - 03:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Instagram" size={20} className="text-primary" />
-                  <span>@kolhozpunk</span>
+                  <span className="text-black">@kolhozpunk</span>
                 </div>
               </CardContent>
             </Card>
@@ -252,7 +252,7 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-6 text-white">
+                <p className="mb-6 text-black">
                   Забронируйте столик и окунитесь в атмосферу настоящего рок-бара!
                 </p>
                 <div className="space-y-4">
@@ -274,12 +274,12 @@ const Index = () => {
       <Separator className="bg-primary/20" />
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-black">
+      <footer className="py-8 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-punk-gray font-bold uppercase">
+          <p className="text-black font-bold uppercase">
             © 2024 КОЛХОЗНЫЙ ПАНК • РОССИЙСКИЙ РОК-БАР
           </p>
-          <p className="text-sm text-punk-gray mt-2">
+          <p className="text-sm text-black mt-2">
             БУНТУЙ. ПЕЙ. РОКАЙ. 🤘
           </p>
         </div>
