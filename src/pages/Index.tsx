@@ -200,13 +200,44 @@ const Index = () => {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="aspect-square bg-secondary rounded-lg overflow-hidden group cursor-pointer">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center group-hover:from-primary/40 transition-colors">
-                  <Icon name="Music" size={48} className="text-primary" />
-                </div>
+            <div className="aspect-square rounded-lg overflow-hidden group cursor-pointer">
+              <img 
+                src="/img/ae243bfb-d106-4f8f-8eff-52628b333145.jpg" 
+                alt="Интерьер рок-бара" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden group cursor-pointer">
+              <img 
+                src="/img/070d11d0-40f4-4d16-a5b9-91ff09f568b7.jpg" 
+                alt="Выступление в баре" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden group cursor-pointer">
+              <img 
+                src="/img/703f9732-705a-4162-8de0-bf6861517eed.jpg" 
+                alt="Коктейли в баре" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden group cursor-pointer">
+              <img 
+                src="/img/1584b150-bdfe-482a-8b3e-033b4a304686.jpg" 
+                alt="Рок-группа на сцене" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="aspect-square bg-secondary rounded-lg overflow-hidden group cursor-pointer">
+              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center group-hover:from-primary/40 transition-colors">
+                <Icon name="Guitar" size={48} className="text-primary" />
               </div>
-            ))}
+            </div>
+            <div className="aspect-square bg-secondary rounded-lg overflow-hidden group cursor-pointer">
+              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center group-hover:from-primary/40 transition-colors">
+                <Icon name="Mic" size={48} className="text-primary" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
